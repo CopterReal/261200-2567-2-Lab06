@@ -1,0 +1,24 @@
+public class Lec06 {
+    public static void main(String[] args) {
+
+        Animal cow = new Cow();
+        Animal owl = new Owl();
+        Animal duck = new Duck();
+        Animal pig = new Pig();
+        PekingDuck pekingDuck = new PekingDuck();
+
+        cow.sound();
+        owl.sound();
+        duck.sound();
+        pig.sound();
+        pekingDuck.sound();
+
+        Duck normalDuck = new Duck();
+        normalDuck.fly();
+        normalDuck.glide();
+        normalDuck.clean(cow);
+
+        pekingDuck.clean(owl);
+        pekingDuck.beCrispy();
+    }
+}
